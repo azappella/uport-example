@@ -6,6 +6,7 @@ uport.requestDisclosure({
   requested: ['name','country'],
   notifications: true
 })
+
 uport.onResponse('disclosureReq').then(payload => {
-  const address = payload.address
+  console.log(payload);
 })
